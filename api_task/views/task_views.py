@@ -19,7 +19,9 @@ class TaskViewSet(BaseViewSet, ModelViewSet):
 	permission_classes =  [IsAuthenticated]
 
 	def get_queryset(self):
-		queryset = Task.objects.filter(active=True)
+		user = self.request.user
+
+		queryset = Task.objects.filter(active=True, user=user)
 
 		return queryset
 
