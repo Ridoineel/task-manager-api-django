@@ -23,7 +23,8 @@ class TaskWriteSerializer(TaskSerializer):
 		}
 
 class TaskCreateSerializer(TaskWriteSerializer):
-	status = serializers.CharField(read_only=True)
+	# status = serializers.CharField(read_only=True)
+	pass
 
 class TaskUpdateSerializer(TaskWriteSerializer):
 	pass
