@@ -3,7 +3,7 @@ from rest_framework import routers
 
 from api_task.views import TaskViewSet
 
-app_name ="api_customer"
+app_name = "api_task"
 
 # router creation
 router = routers.SimpleRouter()
